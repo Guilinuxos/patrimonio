@@ -15,9 +15,6 @@ class PatrimonioControler extends GetxController {
     }
 
   Future<void> todos_patrimonios() async{ 
-    
-
-
     try {
 
       isLoading.value = true;
@@ -27,7 +24,7 @@ class PatrimonioControler extends GetxController {
         response.body;
       }
       
-    } catch {
+    } catch(e) {
       Get.snackbar("erro", "erro ao carregar os dados");
     }
     finally {
